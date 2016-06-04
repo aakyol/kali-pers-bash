@@ -1,6 +1,6 @@
 #!/bin/bash
 #copyright Aydın Akyol 2016
-echo "Enter the USB sdX string to make a partition for persistence: "
+echo "Enter the USB mount point to apply persistence on a partiton: "
 read USBport
 mkfs.ext3 -L persistence /dev/$USBport
 e2label /dev/$USBport persistence
